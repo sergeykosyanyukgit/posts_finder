@@ -1,1 +1,1 @@
-# posts_finder
+# posts_finder by sergeykosyanyukgit

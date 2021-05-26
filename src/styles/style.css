@@ -1,0 +1,105 @@
+* {
+    font-family: zillaslab,palatino,"Palatino Linotype",serif;
+    letter-spacing: .035rem;
+    line-height: 1.2;
+    color: #212121;
+}
+.search-input, form>input {
+    margin-left: 23px;
+    margin-bottom: 23px;
+    padding:5px;
+    font-size: 15px;
+}
+#list{
+    margin-right: 43px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#list>li>.num, #list>li>.title{
+    font-weight: 800;
+    font-size: 35px;
+}
+#list>li>.body{
+    font-weight: 400;
+    font-size: 20px;
+}
+#list>li>button:disabled{
+    background-color: #dadada;
+    border: 1px solid #ebf2f5;
+    cursor: no-drop;
+}
+
+#list>li>button{
+    background-color: #d4ecf8;
+    border: 1px solid #bcebff;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 20px;
+    margin: 20px;
+}
+#list>li{
+    list-style-type: none;
+    border-radius: 3px;
+    padding: 3%;
+    width: 100%;
+    margin: 5px;
+}
+#list>li:nth-child(2n+1) {
+    background-color: #f5f7f8;
+    border: 1px solid #e1f1f8;
+}
+#list>li:nth-child(2n) {
+    background-color: #dcf4ff;
+    border: 1px solid #b1e2f8;
+}
+#list>li:nth-child(2n)>button {
+    background-color: #f5f7f8;
+    border: 1px solid #e1f1f8;
+}
+#list>li:nth-child(2n)>button:disabled{
+    background-color: #dadada;
+    border: 1px solid #ebf2f5;
+    cursor: no-drop;
+}
+#app>.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app>.button-container>button{
+    background-color: #d4ecf8;
+    border: 1px solid #bcebff;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    margin: 20px;
+}
+form>button {
+    background-color: #d4ecf8;
+    border: 1px solid #bcebff;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 190px;
+    height: 32px;
+    margin: 20px;
+}
+#app>.button-container>button:disabled{
+    background-color: #dadada;
+    border: 1px solid #ebf2f5;
+    cursor: no-drop;
+}
+.red-border{
+    border: 2px solid #f56363;
+}
+@media screen and (max-width: 900px) {
+    .list-container>li{
+        list-style-type: none;
+        border-radius: 3px;
+        padding: 3%;
+        width: calc(3/4*100% - 10px);
+        margin: 5px;
+    }
+}

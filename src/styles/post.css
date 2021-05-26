@@ -1,0 +1,44 @@
+* {
+    font-family: zillaslab,palatino,"Palatino Linotype",serif;
+    letter-spacing: .035rem;
+    line-height: 1.2;
+    color: #212121;
+}
+#list-comments{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#list-comments>li>.email, #list-comments>li>.name{
+    font-weight: 800;
+}
+#list-comments>li{
+    list-style-type: none;
+    border-radius: 3px;
+    padding: 3%;
+    width: calc(1/4*100% - 10px);
+    margin: 5px;
+}
+#list-comments>li:nth-child(2n+1) {
+    background-color: #f5f7f8;
+    border: 1px solid #e1f1f8;
+}
+#list-comments>li:nth-child(2n) {
+    background-color: #dcf4ff;
+    border: 1px solid #b1e2f8;
+}
+#app .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 900px) {
+    #list-comments>li{
+        list-style-type: none;
+        border-radius: 3px;
+        padding: 3%;
+        width: calc(3/4*100% - 10px);
+        margin: 5px;
+    }
+}
