@@ -18,7 +18,7 @@ const buildPosts = (userPosts, apiPosts, pageIndex, filter) => {
   page.forEach(post => {
     listItemCreate(list, post)
   })
-  console.log(mathPages(userPosts, apiPosts, pageIndex, filter, 10))
+  //console.log(mathPages(userPosts, apiPosts, pageIndex, filter, 10))
 }
 
 const mathPages = (userPosts, apiPosts, pageIndex, filter, postsPerPage) => {
